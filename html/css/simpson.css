@@ -1,0 +1,141 @@
+@import url(variables.css);
+@font-face {
+  font-family: simpsons;
+  src: url(../img/Homer_Simpson_Revised.ttf);
+  font-weight: bold;
+}
+.encadre, article.personnage, div.interface ul.personnages li.personnage {
+  background-color: var(--vertSimpson);
+  border-radius: 0.3em;
+  border: 0.2em solid var(--jauneSimpson);
+  box-shadow: 0.1em 0.1em 0.1em rgba(0, 0, 0, 0.5), 0.05em 0.05em rgba(0, 0, 0, 0.5) inset;
+}
+
+h1, h2, h3 {
+  font-family: simpsons;
+  margin: 0;
+}
+
+html, body {
+  font-family: arial;
+  font-size: 2.5vw;
+  height: 100%;
+}
+
+body {
+  background-color: var(--jauneSimpson);
+  background-image: url(../img/fond.svg);
+  background-size: 1em;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+div.interface {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+}
+div.interface > header, div.interface footer {
+  background-color: var(--jauneSimpson);
+}
+div.interface > header {
+  display: flex;
+  justify-content: center;
+}
+div.interface > header h1 {
+  color: red;
+  font-size: 7em;
+  line-height: 1em;
+  margin: 0 auto;
+  text-shadow: -0.05em 0.05em black;
+}
+div.interface > header h1 > small {
+  display: block;
+  font-size: 0.5em;
+  line-height: 1em;
+  margin-bottom: -1em;
+  margin-left: 1.5em;
+  text-shadow: -0.05em 0.05em black;
+}
+div.interface ul.personnages {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+div.interface ul.personnages li.personnage {
+  flex: 1 0 auto;
+  margin: 0.3em;
+}
+div.interface ul.personnages li.personnage a {
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  padding: 0.5ch 1ch;
+  text-align: center;
+}
+div.interface > footer {
+  font-size: 0.6em;
+  order: 9999;
+  padding: 1em;
+  text-align: center;
+}
+div.interface > section.body {
+  flex: 1 0 auto;
+  padding: 1em;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+article.personnage {
+  display: flex;
+  padding: 1em;
+}
+article.personnage h3 {
+  font-size: 2em;
+  line-height: 1;
+}
+article.personnage .nom_francais {
+  display: block;
+}
+article.personnage .nom_anglais {
+  display: block;
+  font-size: 0.6em;
+  opacity: 0.5;
+}
+article.personnage img {
+  align-self: flex-start;
+  border: 1px solid black;
+  flex: 0 0 auto;
+  height: 8em;
+  margin-right: 1em;
+}
+article.personnage > div {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
+article.personnage .url_page {
+  font-size: smaller;
+  opacity: 0.3;
+  text-align: right;
+}
+article.personnage .url_page:hover {
+  opacity: 1;
+}
+
+article + article {
+  margin-top: 1em;
+}
+
+div.conteneur {
+  width: 960px;
+}/*# sourceMappingURL=simpson.css.map */

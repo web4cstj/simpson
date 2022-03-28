@@ -7,7 +7,7 @@ VOTRE NOM :
 CONSIGNES GÉNÉRALES
 ===================
 1) Modifier le fichier simpsons.inc.php en suivant les instructions dans le fichier
-2) Modifier le fichier Personnage.class.php en suivant les instructions dans le fichier
+2) Modifier le fichier Personnage.php en suivant les instructions dans le fichier
 3) Compléter la page index.php
 4) Compléter la page details.php
 5) Supprimer les fichiers .html avant la remise
@@ -26,7 +26,7 @@ include_once "../database/simpsons.inc.php";
 /*
 Inclure la classe Personnage
 */
-include_once "../app/Personnage.class.php";
+include_once "../app/Personnage.php";
 
 
 /*

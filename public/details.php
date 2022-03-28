@@ -7,7 +7,7 @@ include "../app/simpsons.inc.php";
 /*
 Inclure la classe Personnage
 */
-include "../app/Personnage.class.php";
+include "../app/Personnage.php";
 
 /*
 Récupérer la donnée "id" provenant de l'adresse.

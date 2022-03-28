@@ -5,7 +5,7 @@ include_once "../database/simpsons.inc.php";
 /**
  * On doit utiliser la classe Personnage
  */
-include_once "../app/Personnage.class.php";
+include_once "../app/Personnage.php";
 
 /**
  * On donne une valeur à $affichage

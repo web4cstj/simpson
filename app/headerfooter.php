@@ -2,5 +2,7 @@
 <header>
 <a href="index.php"><h1><small>Mes</small> Simpson</h1></a>
 </header>
-<footer>&copy; Le contenu de remplissage provient du site <div><a target="_blank" href="http://www.thesimpsonsshow.fr">TheSimpsonsShow.fr</a></div></footer>
+<footer>
+    &copy; Le contenu de remplissage provient du site <span><a target="_blank" href="http://www.thesimpsonsshow.fr">TheSimpsonsShow.fr</a></span>
+</footer>
 <!-- Fin de headerfooter.php -->

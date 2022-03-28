@@ -1,4 +1,7 @@
-INSERT INTO personnages (id,nom_francais,nom_anglais,url_page,url_image,description) VALUES
+DELETE FROM personnages;
+INSERT INTO personnages 
+(id,nom_francais,nom_anglais,url_page,url_image,description) 
+VALUES
 (102, 'AEROSMITH', 'AEROSMITH', 'http://www.thesimpsonsshow.fr/personnages-des-simpson---AEROSMITH.html', 'http://www.thesimpsonsshow.fr/personnages/aerosmith.jpg', 'Le groupe Aerosmith est apparu dans l''épisode Un cocktail d''enfer'),
 (103, 'Akira', 'Akira', 'http://www.thesimpsonsshow.fr/personnages-des-simpson---Akira.html', 'http://www.thesimpsonsshow.fr/personnages/akira.jpg', ''),
 (104, 'Jeff Albertson', 'Jeff Albertson', 'http://www.thesimpsonsshow.fr/personnages-des-simpson-Jeff-(le-vendeur-de-BD)--Albertson.html', 'http://www.thesimpsonsshow.fr/personnages/Jeff_Albertson_the_Comic_Book_Guy.gif', 'Le vendeur de BD.'),
@@ -68,4 +71,4 @@ INSERT INTO personnages (id,nom_francais,nom_anglais,url_page,url_image,descript
 (168, 'Juliet Hobbes', 'Juliet Hobbes', 'http://www.thesimpsonsshow.fr/personnages-des-simpson-Juliet--Hobbes.html', 'http://www.thesimpsonsshow.fr/personnages/juliet_hobbes.jpg', 'Apparu dans le 9ème épisode de la saison 20, elle est la meilleure amie éphémère de Lisa.'),
 (169, 'Pedro Homme abeille', 'Bumblebee Man', 'http://www.thesimpsonsshow.fr/personnages-des-simpson-Pedro--Homme-abeille.html', 'http://www.thesimpsonsshow.fr/personnages/Bumblebee_Man.gif', 'Comique, on peut le voir sur la chaine de télé Channel Ocho'),
 (170, 'Elizabeth Hoover', 'Elizabeth Hoover', 'http://www.thesimpsonsshow.fr/personnages-des-simpson-Elizabeth--Hoover.html', 'http://www.thesimpsonsshow.fr/personnages/Elizabeth_Hoover.gif', 'Maitresse de Lisa Simpson à l''école primaire de Springfield.'),
-(171, 'Gregory House', 'Dr Gregory House', 'http://www.thesimpsonsshow.fr/personnages-des-simpson-Gregory--House.html', 'http://www.thesimpsonsshow.fr/personnages/Dr-House.gif', 'Le Docteur House (Hugh Laurie) en Simpson.')
+(171, 'Gregory House', 'Dr Gregory House', 'http://www.thesimpsonsshow.fr/personnages-des-simpson-Gregory--House.html', 'http://www.thesimpsonsshow.fr/personnages/Dr-House.gif', 'Le Docteur House (Hugh Laurie) en Simpson.');

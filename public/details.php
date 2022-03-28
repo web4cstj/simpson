@@ -2,7 +2,7 @@
 /*
 Inclure le fichier "simpsons.inc.php"
 */
-include "../app/simpsons.inc.php";
+include "../database/simpsons.inc.php";
 
 /*
 Inclure la classe Personnage

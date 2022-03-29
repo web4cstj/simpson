@@ -1,6 +1,7 @@
 <?php
-class Personnage extends Table
+class Personnage extends \Web4cstj\DB\Table
 {
+    static public $database = Simpson::class;
 	static public $table = "personnages";
 	static public $champs = [
 		"nom_francais" => 'Nom français',

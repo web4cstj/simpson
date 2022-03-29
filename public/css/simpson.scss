@@ -58,12 +58,14 @@ div.interface {
 	ul.personnages {
 		display: flex;
 		flex-wrap: wrap;
+		gap: .5em;
+		justify-content: space-evenly;
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 		li.personnage {
 			@extend .encadre;
-			flex: 1 0 auto;
+			flex: 0 0 auto;
 			margin: .3em;
 			a {
 				align-items: center;
@@ -120,11 +122,18 @@ article.personnage {
 		justify-content: space-between;
 	}
 	.url_page {
+		color: #0003;
 		font-size: smaller;
-		opacity: .3;
 		text-align: right;
+		transition: color .2s;
+		background-color: var(--jauneSimpson);
+		align-self: flex-end;
+		padding: .5em 1ch;
+		border-radius: 4px;
+		font-size: smaller;
+		font-weight: bold;
 		&:hover {
-			opacity: 1;
+			color: #000;
 		}
 	}
 }

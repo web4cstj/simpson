@@ -18,16 +18,11 @@ CONSIGNES GÉNÉRALES
 
 
 /*
-Inclure le fichier "simpsons.inc.php"
+Inclure l'autoload
 */
-include_once "../database/simpsons.inc.php";
+include_once "../vendor/autoload.php";
 
-
-/*
-Inclure la classe Personnage
-*/
-include_once "../app/Personnage.php";
-
+$simpsons = Personnage::all();
 
 /*
 Composer l'affichage du ul.personnages avec des concaténations successives
@@ -36,7 +31,7 @@ en utilisant la bonne méthode de la classe Personnage
 $affichage = '';
 $affichage .= '<ul class="personnages">';
 foreach($simpsons as $id => $personnage) {
-	$affichage .= Personnage::html_personnageIndex($personnage);
+	$affichage .= $personnage->html_personnageIndex();
 }
 $affichage .= '</ul>';
 

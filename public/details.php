@@ -1,13 +1,8 @@
 <?php
 /*
-Inclure le fichier "simpsons.inc.php"
+Inclure l'autoload
 */
-include "../database/simpsons.inc.php";
-
-/*
-Inclure la classe Personnage
-*/
-include "../app/Personnage.php";
+include "../vendor/autoload.php";
 
 /*
 Récupérer la donnée "id" provenant de l'adresse.
@@ -23,24 +18,24 @@ $id = $_GET['id'];
 Récupérer le personnage (array) correspondant au id.
 Rediriger vers la page index.php si le personnage n'existe pas.
 */
-if (!isset($simpsons[$id])) {
+$personnage = Personnage::find($id);
+if (!$personnage) {
 	header("location:index.php");
 	exit;
 }
-$personnage = $simpsons[$id];
 
 /*
 Composer l'affichage du article.personnage avec des concaténations successives
 en utilisant la bonne méthode de la classe Personnage
 */
 $affichage = '';
-$affichage .= Personnage::html_personnageDetails($personnage);
+$affichage .= $personnage->html_personnageDetails();
 
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
 	<meta charset="UTF-8">
-	<title><?php /* Afficher le nom en français ICI */ echo $personnage['nom_francais']; ?> — Les personnages — Mes Simpson</title>
+	<title><?php /* Afficher le nom en français ICI */ echo $personnage->nom_francais; ?> — Les personnages — Mes Simpson</title>
 	<link rel="stylesheet" href="css/simpson.css"/>
 </head>
 <body>

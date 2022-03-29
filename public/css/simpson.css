@@ -62,12 +62,14 @@ div.interface > header h1 > small {
 div.interface ul.personnages {
   display: flex;
   flex-wrap: wrap;
+  gap: 0.5em;
+  justify-content: space-evenly;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 div.interface ul.personnages li.personnage {
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   margin: 0.3em;
 }
 div.interface ul.personnages li.personnage a {
@@ -124,12 +126,19 @@ article.personnage > div {
   justify-content: space-between;
 }
 article.personnage .url_page {
+  color: #0003;
   font-size: smaller;
-  opacity: 0.3;
   text-align: right;
+  transition: color 0.2s;
+  background-color: var(--jauneSimpson);
+  align-self: flex-end;
+  padding: 0.5em 1ch;
+  border-radius: 4px;
+  font-size: smaller;
+  font-weight: bold;
 }
 article.personnage .url_page:hover {
-  opacity: 1;
+  color: #000;
 }
 
 article + article {
